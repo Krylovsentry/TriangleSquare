@@ -21,6 +21,7 @@ public class TrianglePopUp extends PopupPanel {
     private Label a_label = new Label("A:");
     private Label b_label = new Label("B:");
     private Label c_label = new Label("C:");
+    private Label error = new Label("Use only numbers!");
 
 
 
@@ -39,6 +40,9 @@ public class TrianglePopUp extends PopupPanel {
         a_text.setStyleName("textbox");
         b_text.setStyleName("textbox");
         c_text.setStyleName("textbox");
+
+        error.setStyleName("label-error");
+        error.setVisible(false);
 
 
         popup_button.setStyleName("button",true);
@@ -62,17 +66,20 @@ public class TrianglePopUp extends PopupPanel {
 
 
                             c_text.setStyleName("textbox-error");
+                            error.setVisible(true);
 
                         }
 
 
                     } else {
                         b_text.setStyleName("textbox-error");
+                        error.setVisible(true);
                     }
 
                 } else {
 
                     a_text.setStyleName("textbox-error");
+                    error.setVisible(true);
                 }
 
             }
@@ -102,6 +109,7 @@ public class TrianglePopUp extends PopupPanel {
 
 
         mainPanel.add(text);
+        mainPanel.add(error);
         mainPanel.add(new LabelHorizontalPanel(a_label,a_text));
         mainPanel.add(new LabelHorizontalPanel(b_label,b_text));
         mainPanel.add(new LabelHorizontalPanel(c_label,c_text));

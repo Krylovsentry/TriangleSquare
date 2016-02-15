@@ -68,6 +68,12 @@ h1{
 .label {
 
     font-family: 'Merienda One', cursive;
+    margin: 2px;
+}
+.label-error{
+
+    font-family: 'Merienda One', cursive;
+    color: red;
 }
 
 .textbox {
