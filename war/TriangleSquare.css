@@ -1,0 +1,83 @@
+/** Add css rules here for your application. */
+
+.gwt-TextBox {
+
+    margin: 5px;
+
+}
+
+
+.body{
+
+    font-family: 'Merienda One', cursive;
+    align-content: center;
+    text-align: center;
+    background-color: #E5F6C6;
+
+}
+
+h1{
+    text-align: center;
+
+}
+
+.table {
+
+    border: solid 2px #5D414D;
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.rows:nth-child(2n) {
+    background: #ABD4C1; /* Цвет фона */
+}
+
+.rows:hover{
+
+   background-color: #7E858B;
+
+
+}
+
+.rows{
+
+    border: solid 1px #7E858B;
+}
+
+.cells{
+    border: solid 1px #7E858B;
+}
+
+.button {
+
+
+    font-family: 'Merienda One', cursive;
+    margin: 10px !important;
+    border-radius: 10%;
+}
+
+.gwt-PopupPanel {
+    border: solid 1px !important;
+    background: #ABD4C1 !important;
+    border-radius: 5%;
+    align-content: center;
+}
+
+.label {
+
+    font-family: 'Merienda One', cursive;
+}
+
+.textbox {
+
+    margin-bottom: 5px;
+}
+.textbox-error{
+
+    margin-bottom: 5px;
+    border: solid 1px red !important;
+
+}
+
